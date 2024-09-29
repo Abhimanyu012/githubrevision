@@ -3,7 +3,7 @@ const myArray = [1, 2, 3, 4, 5, 6];
 //  myArray.push("name")
 //  myArray.pop();
 
-// myArray.unshift(0); 
+// myArray.unshift(0);
 // myArray.shift();
 
 // const newAray = myArray.join()
@@ -18,3 +18,9 @@ const newArr2 = myArray.splice(1, 3);
 console.log("after splice ( 1 , 3 ) ", newArr2);
 console.log("C", myArray);
 
+//                     // output
+//                     A [ 1, 2, 3, 4, 5, 6 ]
+// After slice ( 1 , 3 )  [ 2, 3 ]
+// B [ 1, 2, 3, 4, 5, 6 ]
+// after splice ( 1 , 3 )  [ 2, 3, 4 ]
+// C [ 1, 5, 6 ]
