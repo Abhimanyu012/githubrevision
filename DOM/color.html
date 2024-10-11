@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colored Buttons</title>
+    <style>
+      /* CSS for the square buttons */
+      .canvas{
+        display: flex;
+      }
+      .button {
+        width: 100px;
+        height: 100px;
+        /* display: inline-block; */
+        margin: 10px;
+
+      }
+      #blue {
+        background-color: blue;/
+      }
+      #green {
+        background-color: green;
+      }
+      #red {
+        background-color: red;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <!-- Square buttons with different colors -->
+      <span class="button" id="blue"></span>
+      <span class="button" id="green"></span>
+      <span class="button" id="red"></span>
+      <span class="button" id="yellow"></span>
+    </div>
+  </body>
+  <script>
+    const body = document.querySelector("body");
+    const buttons = document.querySelectorAll(".button");
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function (e) {
+        console.log(e);
+        console.log(e.target);
+        switch (e.target) {
+          case blue:
+            body.style.backgroundColor = "blue";
+            break;
+          case green:
+            body.style.backgroundColor = "green";
+            break;
+          case red:
+            body.style.backgroundColor = "red";
+            break;
+          case yellow:
+            body.style.backgroundColor = "yellow";
+
+          default:
+            break;
+        }
+      });
+    });
+
+    //   if(e.target.id==="blue"){
+    //       body.style.backgroundColor="red"
+    //   }}
+    // )
+    //
+  </script>
+</html>
