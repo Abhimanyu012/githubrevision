@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+
+   
+    
+</body>
+
+<script>
+  function createnewElement(){
+    let newDiv = document.createElement('h1')
+   console.log(newDiv)
+   newDiv.className = 'divElement'
+   newDiv.id = Math.round(Math.random()*10+1)
+   newDiv.setAttribute("title", "generate a title ")
+   newDiv.style.background ="yellow"
+   newDiv.style.color ="black"
+
+
+   let addelement = document.createTextNode (" i'm abhimanyu kumar")
+
+newDiv.appendChild(addelement)
+
+document.body.appendChild(newDiv)
+  }
+
+  createnewElement()
+    
+  for (let i = 0 ; i<10 ; i++)
+  {
+    createnewElement()
+    console.log(i)
+  }
+ 
+
+   
+
+
+</script>
+ 
+</html>
